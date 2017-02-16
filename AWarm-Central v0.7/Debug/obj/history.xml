@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m3 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F103C8 -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -I..\..\..\..\..\Users\User\ownCloud\009_Aster\Development\Software\Asterwarm -I..\..\..\..\..\Users\User\ownCloud\009_Aster\Development\Software\Asterwarm\Asterwarm v0.7_uC central\AWarm-Central-v0.7\cmsis_boot -I..\..\..\..\..\Users\User\ownCloud\009_Aster\Development\Software\Asterwarm\Asterwarm v0.7_uC central\AWarm-Central-v0.7\stm_lib -I..\..\..\..\..\Users\User\ownCloud\009_Aster\Development\Software\Asterwarm\Asterwarm v0.7_uC central\AWarm-Central-v0.7\stm_lib\inc -I..\..\..\..\..\Users\User\ownCloud\009_Aster\Development\Software\Asterwarm\Asterwarm v0.7_uC central\AWarm-Central-v0.7 -I..\..\..\..\..\Users\User\ownCloud\009_Aster\Development\Software\Asterwarm\Asterwarm v0.7_uC central\AWarm-Central-v0.7\cmsis -I..\..\..\..\..\Users\User\ownCloud\009_Aster\Development\Software\Asterwarm\Asterwarm v0.7_uC central">
+      <target file="stm32f10x_tim.o" lastModified="15a45d6d385">
+         <source file="..\..\..\stm_lib\src\stm32f10x_tim.c" lastModified="15a45d5631b"/>
+      </target>
+      <target file="stm32f10x_i2c.o" lastModified="15a45d6d9a8">
+         <source file="..\..\..\stm_lib\src\stm32f10x_i2c.c" lastModified="15a45d5579c"/>
+      </target>
+      <target file="system_stm32f10x.o" lastModified="15a45d6d3c3">
+         <source file="..\..\..\cmsis_boot\system_stm32f10x.c" lastModified="15a45d5497d"/>
+      </target>
+      <target file="main.o" lastModified="15a45d6d856">
+         <source file="..\..\..\main.c" lastModified="15a45d5b251"/>
+      </target>
+      <target file="stm32f10x_gpio.o" lastModified="15a45d6d43f">
+         <source file="..\..\..\stm_lib\src\stm32f10x_gpio.c" lastModified="15a45d54972"/>
+      </target>
+      <target file="stm32f10x_usart.o" lastModified="15a45d6d90a">
+         <source file="..\..\..\stm_lib\src\stm32f10x_usart.c" lastModified="15a45d5680b"/>
+      </target>
+      <target file="stm32f10x_rcc.o" lastModified="15a45d6d8b2">
+         <source file="..\..\..\stm_lib\src\stm32f10x_rcc.c" lastModified="15a45d54986"/>
+      </target>
+      <target file="startup_stm32f10x_md.o" lastModified="15a45d6d3f6">
+         <source file="..\..\..\cmsis_boot\startup\startup_stm32f10x_md.c" lastModified="15a45d54978"/>
+      </target>
+      <target file="misc.o" lastModified="15a45d6d949">
+         <source file="..\..\..\stm_lib\src\misc.c" lastModified="15a45d6bffa"/>
+      </target>
+   </processor>
+</history>
