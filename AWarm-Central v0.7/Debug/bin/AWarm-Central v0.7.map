@@ -269,6 +269,10 @@ Discarded input sections
  .text.GPIO_ETH_MediaInterfaceConfig
                 0x00000000       0x1c ..\obj\stm32f10x_gpio.o
  .text          0x00000000        0x0 ..\obj\main.o
+ .text.PWM_Init
+                0x00000000       0x88 ..\obj\main.o
+ .text.set_position
+                0x00000000       0x1c ..\obj\main.o
  .text.Delay_Nus
                 0x00000000       0x3c ..\obj\main.o
  .text          0x00000000        0x0 ..\obj\stm32f10x_rcc.o
@@ -861,15 +865,15 @@ LOAD c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm
 END GROUP
 OUTPUT(AWarm-Central v0.7.elf elf32-littlearm)
 
-.debug_info     0x00000000     0x42dd
+.debug_info     0x00000000     0x4622
  .debug_info    0x00000000      0x479 ..\obj\system_stm32f10x.o
  .debug_info    0x00000479       0xe9 ..\obj\startup_stm32f10x_md.o
  .debug_info    0x00000562      0x6e7 ..\obj\stm32f10x_gpio.o
- .debug_info    0x00000c49     0x13e2 ..\obj\main.o
- .debug_info    0x0000202b      0x88d ..\obj\stm32f10x_rcc.o
- .debug_info    0x000028b8      0x9e8 ..\obj\stm32f10x_usart.o
- .debug_info    0x000032a0      0x53d ..\obj\misc.o
- .debug_info    0x000037dd      0xb00 ..\obj\stm32f10x_i2c.o
+ .debug_info    0x00000c49     0x1727 ..\obj\main.o
+ .debug_info    0x00002370      0x88d ..\obj\stm32f10x_rcc.o
+ .debug_info    0x00002bfd      0x9e8 ..\obj\stm32f10x_usart.o
+ .debug_info    0x000035e5      0x53d ..\obj\misc.o
+ .debug_info    0x00003b22      0xb00 ..\obj\stm32f10x_i2c.o
 
 .debug_abbrev   0x00000000      0xd32
  .debug_abbrev  0x00000000      0x14c ..\obj\system_stm32f10x.o
@@ -881,7 +885,7 @@ OUTPUT(AWarm-Central v0.7.elf elf32-littlearm)
  .debug_abbrev  0x00000a89      0x145 ..\obj\misc.o
  .debug_abbrev  0x00000bce      0x164 ..\obj\stm32f10x_i2c.o
 
-.debug_aranges  0x00000000      0x5a0
+.debug_aranges  0x00000000      0x5b0
  .debug_aranges
                 0x00000000       0x38 ..\obj\system_stm32f10x.o
  .debug_aranges
@@ -889,52 +893,52 @@ OUTPUT(AWarm-Central v0.7.elf elf32-littlearm)
  .debug_aranges
                 0x00000060       0xa8 ..\obj\stm32f10x_gpio.o
  .debug_aranges
-                0x00000108      0x120 ..\obj\main.o
+                0x00000108      0x130 ..\obj\main.o
  .debug_aranges
-                0x00000228      0x118 ..\obj\stm32f10x_rcc.o
+                0x00000238      0x118 ..\obj\stm32f10x_rcc.o
  .debug_aranges
-                0x00000340      0x100 ..\obj\stm32f10x_usart.o
+                0x00000350      0x100 ..\obj\stm32f10x_usart.o
  .debug_aranges
-                0x00000440       0x40 ..\obj\misc.o
+                0x00000450       0x40 ..\obj\misc.o
  .debug_aranges
-                0x00000480      0x120 ..\obj\stm32f10x_i2c.o
+                0x00000490      0x120 ..\obj\stm32f10x_i2c.o
 
-.debug_ranges   0x00000000      0x520
+.debug_ranges   0x00000000      0x530
  .debug_ranges  0x00000000       0x28 ..\obj\system_stm32f10x.o
  .debug_ranges  0x00000028       0x18 ..\obj\startup_stm32f10x_md.o
  .debug_ranges  0x00000040       0x98 ..\obj\stm32f10x_gpio.o
- .debug_ranges  0x000000d8      0x110 ..\obj\main.o
- .debug_ranges  0x000001e8      0x108 ..\obj\stm32f10x_rcc.o
- .debug_ranges  0x000002f0       0xf0 ..\obj\stm32f10x_usart.o
- .debug_ranges  0x000003e0       0x30 ..\obj\misc.o
- .debug_ranges  0x00000410      0x110 ..\obj\stm32f10x_i2c.o
+ .debug_ranges  0x000000d8      0x120 ..\obj\main.o
+ .debug_ranges  0x000001f8      0x108 ..\obj\stm32f10x_rcc.o
+ .debug_ranges  0x00000300       0xf0 ..\obj\stm32f10x_usart.o
+ .debug_ranges  0x000003f0       0x30 ..\obj\misc.o
+ .debug_ranges  0x00000420      0x110 ..\obj\stm32f10x_i2c.o
 
-.debug_line     0x00000000     0x2697
+.debug_line     0x00000000     0x26f7
  .debug_line    0x00000000      0x2a7 ..\obj\system_stm32f10x.o
  .debug_line    0x000002a7       0xea ..\obj\startup_stm32f10x_md.o
  .debug_line    0x00000391      0x4cf ..\obj\stm32f10x_gpio.o
- .debug_line    0x00000860      0x95d ..\obj\main.o
- .debug_line    0x000011bd      0x5dc ..\obj\stm32f10x_rcc.o
- .debug_line    0x00001799      0x5b2 ..\obj\stm32f10x_usart.o
- .debug_line    0x00001d4b      0x35d ..\obj\misc.o
- .debug_line    0x000020a8      0x5ef ..\obj\stm32f10x_i2c.o
+ .debug_line    0x00000860      0x9bd ..\obj\main.o
+ .debug_line    0x0000121d      0x5dc ..\obj\stm32f10x_rcc.o
+ .debug_line    0x000017f9      0x5b2 ..\obj\stm32f10x_usart.o
+ .debug_line    0x00001dab      0x35d ..\obj\misc.o
+ .debug_line    0x00002108      0x5ef ..\obj\stm32f10x_i2c.o
 
-.debug_str      0x00000000     0x1e3b
+.debug_str      0x00000000     0x2027
  .debug_str     0x00000000      0x2d0 ..\obj\system_stm32f10x.o
                                 0x33f (size before relaxing)
  .debug_str     0x000002d0       0xf8 ..\obj\startup_stm32f10x_md.o
                                 0x18f (size before relaxing)
  .debug_str     0x000003c8      0x3fd ..\obj\stm32f10x_gpio.o
                                 0x569 (size before relaxing)
- .debug_str     0x000007c5      0x994 ..\obj\main.o
-                                0xd44 (size before relaxing)
- .debug_str     0x00001159      0x430 ..\obj\stm32f10x_rcc.o
+ .debug_str     0x000007c5      0xb80 ..\obj\main.o
+                                0xf39 (size before relaxing)
+ .debug_str     0x00001345      0x430 ..\obj\stm32f10x_rcc.o
                                 0x66a (size before relaxing)
- .debug_str     0x00001589      0x3f1 ..\obj\stm32f10x_usart.o
+ .debug_str     0x00001775      0x3f1 ..\obj\stm32f10x_usart.o
                                 0x6e0 (size before relaxing)
- .debug_str     0x0000197a      0x143 ..\obj\misc.o
+ .debug_str     0x00001b66      0x143 ..\obj\misc.o
                                 0x40e (size before relaxing)
- .debug_str     0x00001abd      0x37e ..\obj\stm32f10x_i2c.o
+ .debug_str     0x00001ca9      0x37e ..\obj\stm32f10x_i2c.o
                                 0x6b6 (size before relaxing)
 
 .comment        0x00000000       0x70
@@ -983,19 +987,19 @@ OUTPUT(AWarm-Central v0.7.elf elf32-littlearm)
  .ARM.attributes
                 0x000002b3       0x2d c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg.a(lib_a-strlen.o)
 
-.debug_frame    0x00000000     0x196c
+.debug_frame    0x00000000     0x19b8
  .debug_frame   0x00000000       0x98 ..\obj\system_stm32f10x.o
  .debug_frame   0x00000098       0x4c ..\obj\startup_stm32f10x_md.o
  .debug_frame   0x000000e4      0x2d0 ..\obj\stm32f10x_gpio.o
- .debug_frame   0x000003b4      0x4d4 ..\obj\main.o
- .debug_frame   0x00000888      0x4f4 ..\obj\stm32f10x_rcc.o
- .debug_frame   0x00000d7c      0x490 ..\obj\stm32f10x_usart.o
- .debug_frame   0x0000120c       0xd8 ..\obj\misc.o
- .debug_frame   0x000012e4      0x530 ..\obj\stm32f10x_i2c.o
- .debug_frame   0x00001814       0x28 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_aeabi_uldivmod.o)
- .debug_frame   0x0000183c       0x54 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(bpabi.o)
- .debug_frame   0x00001890       0x34 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_divdi3.o)
- .debug_frame   0x000018c4       0x34 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_udivdi3.o)
- .debug_frame   0x000018f8       0x34 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg.a(lib_a-memset.o)
- .debug_frame   0x0000192c       0x20 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg.a(lib_a-strcpy.o)
- .debug_frame   0x0000194c       0x20 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg.a(lib_a-strlen.o)
+ .debug_frame   0x000003b4      0x520 ..\obj\main.o
+ .debug_frame   0x000008d4      0x4f4 ..\obj\stm32f10x_rcc.o
+ .debug_frame   0x00000dc8      0x490 ..\obj\stm32f10x_usart.o
+ .debug_frame   0x00001258       0xd8 ..\obj\misc.o
+ .debug_frame   0x00001330      0x530 ..\obj\stm32f10x_i2c.o
+ .debug_frame   0x00001860       0x28 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_aeabi_uldivmod.o)
+ .debug_frame   0x00001888       0x54 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(bpabi.o)
+ .debug_frame   0x000018dc       0x34 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_divdi3.o)
+ .debug_frame   0x00001910       0x34 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_udivdi3.o)
+ .debug_frame   0x00001944       0x34 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg.a(lib_a-memset.o)
+ .debug_frame   0x00001978       0x20 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg.a(lib_a-strcpy.o)
+ .debug_frame   0x00001998       0x20 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg.a(lib_a-strlen.o)

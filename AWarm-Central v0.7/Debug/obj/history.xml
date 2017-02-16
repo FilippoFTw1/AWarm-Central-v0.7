@@ -10,8 +10,8 @@
       <target file="system_stm32f10x.o" lastModified="15a45d6d3c3">
          <source file="..\..\..\cmsis_boot\system_stm32f10x.c" lastModified="15a45d5497d"/>
       </target>
-      <target file="main.o" lastModified="15a45d6d856">
-         <source file="..\..\..\main.c" lastModified="15a45d5b251"/>
+      <target file="main.o" lastModified="15a45e32cc8">
+         <source file="..\..\..\main.c" lastModified="15a45e1551e"/>
       </target>
       <target file="stm32f10x_gpio.o" lastModified="15a45d6d43f">
          <source file="..\..\..\stm_lib\src\stm32f10x_gpio.c" lastModified="15a45d54972"/>

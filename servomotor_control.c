@@ -44,5 +44,5 @@ void PWM_Init()
 }
 
 void set_position(int position){
-	TIM2-CCR1 = position;
+	TIM2->CCR1 = position;
 }

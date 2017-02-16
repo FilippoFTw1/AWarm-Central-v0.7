@@ -1,5 +1,6 @@
 
 #include <main.h>
+#include <servomotor_control.c>
 #include <stm32f10x.h>
 #include <stm32f10x_gpio.h>
 #include <stm32f10x_rcc.h>
